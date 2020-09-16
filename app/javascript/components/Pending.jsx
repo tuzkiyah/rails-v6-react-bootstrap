@@ -1,5 +1,5 @@
 import React from 'react';
-import PendingItems from './PendingItem';
+import PendingItems from './PendingItems';
 
 const Pending = ({ pending }) => {
   const handleSubmit = (body) => {
@@ -22,8 +22,8 @@ const Pending = ({ pending }) => {
       })
       .then(response => {
         console.log(response);
-        // window.location.reload(false);
-        return false;
+        window.location.reload(false);
+        // return false;
       })
       .catch(() => console.log('An error occurred while adding the todo item'));
   }
@@ -40,24 +40,3 @@ const Pending = ({ pending }) => {
 }
 
 export default Pending;
-
-
-// const Pending = ({ pending }) => {
-//   return (
-//     <div>
-//       <h4>Pending</h4>
-//       {pending.map((todo, i) => {
-//         return (
-//           <div className="form-check" key={i}>
-//             <input className="form-check-input" type="checkbox" checked={todo.completed} value="" id={'checkbox${todo.id}'} />
-//             <label className="form-check-label" htmlFor={'checkbox${todo.id}'}>
-//               {todo.title}
-//             </label>
-//           </div>
-//         )
-//       })}
-//     </div>
-//   )
-// };
-
-// export default Pending;
