@@ -23,7 +23,6 @@ const Completed = ({ completed }) => {
       .then(response => {
         console.log(response);
         window.location.reload(false);
-        // return false;
       })
       .catch(() => console.log('An error occurred while adding the todo item'));
   }

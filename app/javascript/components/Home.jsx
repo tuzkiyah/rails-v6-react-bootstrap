@@ -74,6 +74,12 @@ const Home  = () => {
   return (
     <div className="vw-100 vh-100 primary-color d-flex justify-content-center">
       <div className="jumbotron jumbotron-fluid bg-transparent">
+
+        <button type="button" className="btn btn-secondary" data-toggle="tooltip" 
+          data-placement="top" title="Tooltip on top">
+          Tooltip on top
+        </button>
+
         <div className="container secondary-color">
           <h1 className="display-4">Todo</h1>
           <p className="lead">
